@@ -21,10 +21,5 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ],
-  "env": {
-    "REACT_APP_API_URL": "@react_app_api_url",
-    "REACT_APP_SECRET_KEY": "@react_app_secret_key",
-    "REACT_APP_PROJECT_NAME": "@react_app_project_name"
-  }
+  ]
 }
