@@ -615,7 +615,7 @@ const AdminWallet = (props) => {
                           type="text"
                           className="form-control text-center card"
                           placeholder="Select Date"
-                          readonly="readonly"
+                          readOnly={true}
                           style={{
                             width: "15rem",
                             fontWeight: 700,

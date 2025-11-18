@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Button from "../extra/Button";
 import Input from "../extra/Input";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { loginAdmin } from "../store/admin/admin.action";
 import { connect, useSelector } from "react-redux";
 
@@ -60,7 +60,6 @@ const Login = (props) => {
                   className="img-fluid"
                   src={require("../../assets/images/Group 2033 1.png")}
                   alt=""
-                  srcset=""
                 />
               </div>
             </div>
@@ -144,9 +143,9 @@ const Login = (props) => {
                   </div>
 
                   <div className="d-flex align-items-center justify-content-end fw-bold">
-                    <a href="/forgotPassword" style={{ color: "#B9315F" }}>
+                    <Link to="/forgotPassword" style={{ color: "#B9315F", textDecoration: "none" }}>
                       Forgot password?
-                    </a>
+                    </Link>
                   </div>
 
                   <div className="loginButton boxCenter mt-5">           

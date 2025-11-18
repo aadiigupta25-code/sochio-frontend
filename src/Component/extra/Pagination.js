@@ -123,12 +123,13 @@ const Pagination = (props) => {
           <span className="text-dark fw-semibold fs-6">Row Per Page :-</span>
           <select
             className="mx-2 pageOption"
+            defaultValue="10"
             onChange={(e) => onRowsPerPageChange(e.target.value)}
           >
             <option className="fs-6 fw-semibold" value="5">
               5
             </option>
-            <option className="fs-6 fw-semibold" value="10" selected>
+            <option className="fs-6 fw-semibold" value="10">
               10
             </option>
             <option className="fs-6 fw-semibold" value="25">
@@ -203,10 +204,11 @@ const Pagination = (props) => {
           <span className="mt-2">Row Per Page :-</span>
           <select
             className="mx-2 pageOption"
+            defaultValue="10"
             onChange={(e) => onRowsPerPageChange(e.target.value)}
           >
             <option value="5">5</option>
-            <option value="10" selected>
+            <option value="10">
               10
             </option>
             <option value="15">15</option>

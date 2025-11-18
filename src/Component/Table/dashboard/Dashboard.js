@@ -1400,7 +1400,7 @@ const Dashboard = (props) => {
                           type="text"
                           className="form-control text-center card my-1"
                           placeholder="Select Date"
-                          readonly="readonly"
+                          readOnly={true}
                           style={{
                             width: "14rem",
                             fontWeight: 500,
@@ -1450,7 +1450,7 @@ const Dashboard = (props) => {
                           type="text"
                           className="form-control text-center card my-1"
                           placeholder="Select Date"
-                          readonly="readonly"
+                          readOnly={true}
                           style={{
                             width: "14rem",
                             fontWeight: 500,

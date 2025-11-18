@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { signupAdmin } from "../store/admin/admin.action";
 import Button from "../extra/Button";
 import Input from "../extra/Input";
+import { Link } from "react-router-dom";
 
 const Registration = (props) => {
   const [email, setEmail] = useState("");
@@ -78,7 +79,6 @@ const Registration = (props) => {
                   className="img-fluid"
                   src={require("../../assets/images/Group 2033 1.png")}
                   alt=""
-                  srcset=""
                 />
               </div>
             </div>
@@ -217,6 +217,13 @@ const Registration = (props) => {
                       // btnIcon={`fa fa-sign-in`}
                       onClick={handleSubmit}
                     />
+                  </div>
+                  
+                  <div className="d-flex align-items-center justify-content-center fw-bold mt-3">
+                    <span style={{ color: "rgba(0, 0, 0, 0.50)" }}>Already have an account?</span>
+                    <Link to="/adminlogin" style={{ color: "#B9315F", marginLeft: "5px", textDecoration: "none" }}>
+                      Log In
+                    </Link>
                   </div>
                 </div>
               </div>
