@@ -35,7 +35,8 @@ export const apiInstanceFetch = {
   },
   get: async (url) => {
     openSpinner();
-    return fetch(`${apiInstanceFetch?.baseURL}${url}`, {
+    const endpoint = url.startsWith('/') ? url : `/${url}`;
+    return fetch(`${apiInstanceFetch?.baseURL}${endpoint}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -49,7 +50,8 @@ export const apiInstanceFetch = {
 
   post: (url, data) => {
     openSpinner();
-    return fetch(`${apiInstanceFetch.baseURL}${url}`, {
+    const endpoint = url.startsWith('/') ? url : `/${url}`;
+    return fetch(`${apiInstanceFetch.baseURL}${endpoint}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -64,7 +66,8 @@ export const apiInstanceFetch = {
 
   patch: (url, data) => {
     openSpinner();
-    return fetch(`${apiInstanceFetch.baseURL}${url}`, {
+    const endpoint = url.startsWith('/') ? url : `/${url}`;
+    return fetch(`${apiInstanceFetch.baseURL}${endpoint}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -79,7 +82,8 @@ export const apiInstanceFetch = {
 
   put: (url, data) => {
     openSpinner();
-    return fetch(`${apiInstanceFetch.baseURL}${url}`, {
+    const endpoint = url.startsWith('/') ? url : `/${url}`;
+    return fetch(`${apiInstanceFetch.baseURL}${endpoint}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -94,7 +98,8 @@ export const apiInstanceFetch = {
 
   delete: (url) => {
     openSpinner();
-    return fetch(`${apiInstanceFetch.baseURL}${url}`, {
+    const endpoint = url.startsWith('/') ? url : `/${url}`;
+    return fetch(`${apiInstanceFetch.baseURL}${endpoint}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
